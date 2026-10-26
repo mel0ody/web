@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hosana Melody — Information Systems Student</title>
+<meta name="description" content="Portofolio Hosana Melody, mahasiswa Sistem Informasi Universitas Tanjungpura.">
+<meta name="theme-color" content="#0B0E1A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main" class="sr-only skip">Skip to main content</a>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+<div id="progress" aria-hidden="true"></div>
+
+<div id="loader"><div class="box"><span class="logo" id="loader-logo"></span><div class="bar"><i></i></div></div></div>
+
+<header id="header">
+  <div class="section-container">
+    <nav class="" aria-label="Primary">
+      <a href="#home" class="brand" id="brand"></a>
+      <ul class="nav-links" id="nav-links"></ul>
+      <button class="burger glass" id="burger" aria-label="Buka menu" aria-expanded="false"></button>
+    </nav>
+    <div id="mobile-menu" class="glass"></div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HOME -->
+  <section id="home">
+    <div class="section-container hero-grid">
+      <div class="hero-text">
+        <span class="eyebrow reveal">Welcome to my portfolio</span>
+        <h1 class="reveal">Hi, I'm <span class="gradient-text" id="h-name"></span></h1>
+        <p class="hero-role reveal" id="h-role"></p>
+        <p class="hero-desc reveal" id="h-desc"></p>
+        <div class="hero-actions reveal" id="h-actions"></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="profile">
+          <div class="profile-frame"><div class="profile-inner" id="h-photo"></div></div>
+          <span class="float-chip glass fc1" id="fc1"></span>
+          <span class="float-chip glass fc2" id="fc2"></span>
+          <span class="float-chip glass fc3" id="fc3"></span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll ke About" id="scroll-down"></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section-padding">
+    <div class="section-container">
+      <div class="sec-head">
+        <span class="eyebrow reveal">Get to know me</span>
+        <h2 class="reveal">About Me</h2>
+        <p class="reveal">Sedikit cerita tentang saya, latar belakang, dan hal-hal yang saya sukai.</p>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p class="about-text reveal" id="a-text"></p>
+          <div class="edu-list reveal" id="a-edu"></div>
+        </div>
+        <div>
+          <div class="int-title reveal" id="a-int-title"></div>
+          <div class="int-grid" id="a-int"></div>
+        </div>
+      </div>
+      <div class="extra-grid">
+        <div class="glass-card extra-card reveal"><h3 id="str-title"></h3><div class="chips" id="a-str"></div></div>
+        <div class="glass-card extra-card reveal"><h3 id="fact-title"></h3><ul class="facts" id="a-facts"></ul></div>
+      </div>
+      <div class="glass-card quote reveal"><q id="a-motto"></q><small>My Motto</small></div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section-padding">
+    <div class="section-container">
+      <div class="sec-head">
+        <span class="eyebrow reveal">What I work with</span>
+        <h2 class="reveal">Skills &amp; Technologies</h2>
+        <p class="reveal">Kemampuan yang sudah saya miliki dan yang sedang saya pelajari.</p>
+      </div>
+      <div class="filters" id="s-filters"></div>
+      <div class="skill-grid" id="s-grid"></div>
+      <div class="learn reveal"><h3>Currently Learning</h3><div class="chips" id="s-learn"></div></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section-padding">
+    <div class="section-container">
+      <div class="sec-head">
+        <span class="eyebrow reveal">Selected work</span>
+        <h2 class="reveal">Projects</h2>
+        <p class="reveal">Karya yang telah saya buat.</p>
+      </div>
+      <div class="proj-grid" id="p-grid"></div>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section id="journey" class="section-padding">
+    <div class="section-container">
+      <div class="sec-head">
+        <span class="eyebrow reveal">My path so far</span>
+        <h2 class="reveal">Journey Timeline</h2>
+        <p class="reveal">Perjalanan pendidikan saya dari sekolah dasar sampai bangku kuliah.</p>
+      </div>
+      <div class="timeline" id="timeline">
+        <div class="tl-line"></div><div class="tl-fill" id="tl-fill"></div>
+        <div class="tl-items" id="tl-items"></div>
+      </div>
+      <h3 class="sub-head reveal">Kegiatan Saya</h3>
+      <div class="act-grid" id="act-grid"></div>
+    </div>
+  </section>
+
+  <!-- GOALS -->
+  <section id="goals" class="section-padding">
+    <div class="section-container">
+      <div class="sec-head">
+        <span class="eyebrow reveal">Where I'm heading</span>
+        <h2 class="reveal">Achievements &amp; Goals</h2>
+        <p class="reveal">Pencapaian awal saya dan langkah yang ingin saya tempuh.</p>
+      </div>
+      <div class="achv-grid" id="achv-grid"></div>
+      <h3 class="sub-head reveal">Goals &amp; Roadmap</h3>
+      <p class="goal-intro reveal" id="goal-intro"></p>
+      <div class="road" id="road"></div>
+    </div>
+  </section>
+
+  <!-- FAVORITES -->
+  <section id="favorites" class="section-padding">
+    <div class="section-container">
+      <div class="sec-head">
+        <span class="eyebrow reveal">Things I love</span>
+        <h2 class="reveal">My Favorites</h2>
+        <p class="reveal">Lagu dan film yang menemani hari-hari saya.</p>
+      </div>
+      <div class="glass-card player reveal" id="player">
+        <div class="turntable">
+          <div class="disc" id="disc"><div class="label" id="disc-label"></div></div>
+          <span class="arm" aria-hidden="true"></span>
+        </div>
+        <div class="pinfo">
+          <span class="eyebrow">Lagu Favorit</span>
+          <h3 id="song-title"></h3>
+          <p class="artist" id="song-artist"></p>
+          <div class="eq" id="eq" aria-hidden="true"></div>
+          <div class="prog"><span id="t-cur">0:00</span><div class="bar" id="p-bar"><i id="p-fill"></i></div><span id="t-dur">0:30</span></div>
+          <div class="pctl"><button class="play" id="p-btn" type="button" aria-label="Putar"></button><span class="pnote" id="p-note">Memuat pratinjau lagu…</span></div>
+          <div class="plinks" id="p-links"></div>
+        </div>
+      </div>
+      <h3 class="sub-head reveal">Film Favorit</h3>
+      <div class="film-grid" id="film-grid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-padding">
+    <div class="section-container">
+      <div class="sec-head">
+        <span class="eyebrow reveal">Let's connect</span>
+        <h2 class="reveal">Contact Me</h2>
+        <p class="reveal">Punya project, pertanyaan, atau ingin berkolaborasi? Jangan ragu untuk menghubungi saya.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-list" id="k-list"></div>
+        <form class="glass-card reveal" id="k-form" autocomplete="off">
+          <div class="row">
+            <div><label for="f-name">Name</label><input id="f-name" required placeholder="Nama lengkap kamu"></div>
+            <div><label for="f-email">Email</label><input id="f-email" type="email" required placeholder="email@contoh.com"></div>
+          </div>
+          <div><label for="f-msg">Message</label><textarea id="f-msg" rows="5" required placeholder="Ceritakan tentang project atau pesanmu..."></textarea></div>
+          <button type="submit" class="btn-primary" id="f-btn"></button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="section-container foot">
+    <p id="foot-text"></p>
+    <div class="socials" id="foot-socials"></div>
+    <button class="round glass" id="to-top" aria-label="Back to top"></button>
+  </div>
+</footer>
+
+
+
+<script src="js/config.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
